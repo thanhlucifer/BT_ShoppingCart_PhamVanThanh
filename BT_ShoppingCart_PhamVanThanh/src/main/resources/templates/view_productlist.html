@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <title>Employee Management System</title>
@@ -26,7 +26,8 @@ MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
             <td th:text="${product.name}"></td>
             <td th:text="${product.price}"></td>
             <td th:text="${product.quantity}"></td>
-            <td><a th:href="@{/shoppingcart/add/{id} (id=${product.id})}" class="btn btn-primary">Buy now</a></td>
+            <td><a th:href="@{/shoppingcart/add/{id} (id=${product.id})}" class="btn btn-primary">Buy now</a>
+                <a th:href="@{/product/delete/{id}(id=${product.id})}" class="btn btn-danger">Delete</a></td>
         </tr>
         </tbody>
     </table>
